@@ -120,7 +120,7 @@ What is Python?	Paris is a city in France	0
 - **Inference**: GPU-accelerated
 - **Expected MRR**: 0.5-0.7+
 
-![Sample Screenshot](screenshot.png)
+![Sample Screenshot](https://github.com/Shaik-pardi-11/wikiQA_System-Design/blob/main/interaction%20page.png)
 
 ##  Evaluation Metrics
 
