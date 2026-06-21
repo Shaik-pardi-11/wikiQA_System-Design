@@ -142,7 +142,6 @@ The Streamlit app provides an interactive interface with:
 - Results from both TF-IDF and BERT models
 - Side-by-side comparison of approaches
 
-![Sample Screenshot](screenshot.png)
 
 ##  Configuration
 
