@@ -240,11 +240,7 @@ On a machine with 16GB RAM and an NVIDIA GPU:
 - [scikit-learn](https://scikit-learn.org)
 - [WikiQA Dataset Paper](https://aclanthology.org/D15-1237/)
 
-## 📄 License
-
-This project is licensed under the MIT License - see LICENSE file for details.
-
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -254,22 +250,8 @@ Contributions are welcome! Please follow these steps:
 4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
-## ⭐ Citation
-
-If you use this project in your research, please cite:
-
-```bibtex
-@software{wikiqa2024,
-  title={WikiQA Question Answering System},
-  author={Your Name},
-  year={2024},
-  url={https://github.com/your-username/wikiQA}
-}
-```
 
 
 ---
 
-**Made with ❤️ by [Your Name]**
-
-⭐ If you found this helpful, please give it a star!
+ If you found this helpful, please give it a star!
