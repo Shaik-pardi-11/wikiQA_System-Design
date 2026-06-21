@@ -6,16 +6,16 @@
 
 A hybrid Question Answering system combining **TF-IDF with Logistic Regression** and **BERT-based deep learning** approaches to retrieve and rank relevant answers from a dataset of Q&A pairs.
 
-## 🎯 Features
+##  Features
 
-- ✅ **Dual Model Approach**: TF-IDF baseline + BERT fine-tuning
-- ✅ **Interactive Web UI**: Streamlit-based interface
-- ✅ **Evaluation Metrics**: MRR (Mean Reciprocal Rank) & MAP (Mean Average Precision)
-- ✅ **GPU Support**: Accelerated BERT inference with CUDA
-- ✅ **Easy to Deploy**: Streamlit Cloud ready
-- ✅ **Reproducible**: Fixed random seeds for consistency
+-  **Dual Model Approach**: TF-IDF baseline + BERT fine-tuning
+-  **Interactive Web UI**: Streamlit-based interface
+-  **Evaluation Metrics**: MRR (Mean Reciprocal Rank) & MAP (Mean Average Precision)
+-  **GPU Support**: Accelerated BERT inference with CUDA
+-  **Easy to Deploy**: Streamlit Cloud ready
+-  **Reproducible**: Fixed random seeds for consistency
 
-## 📋 Requirements
+##  Requirements
 
 ### System Requirements
 - **Python**: 3.8 - 3.11
@@ -33,7 +33,7 @@ transformers>=4.6.0
 streamlit>=1.0.0
 ```
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Clone the Repository
 ```bash
@@ -66,7 +66,7 @@ streamlit run app.py
 
 Then open http://localhost:8501 in your browser.
 
-## 📁 Project Structure
+##  Project Structure
 
 ```
 wikiQA/
@@ -86,7 +86,7 @@ wikiQA/
 └── README.md              # This file
 ```
 
-## 📊 Data Format
+##  Data Format
 
 The project expects TSV (Tab-Separated Values) files with three columns:
 
@@ -102,7 +102,7 @@ What is Python?	Python is a programming language	1
 What is Python?	Paris is a city in France	0
 ```
 
-## 🤖 Models
+##  Models
 
 ### Model 1: TF-IDF + Logistic Regression
 - **Vectorizer**: TF-IDF (Term Frequency-Inverse Document Frequency)
@@ -120,7 +120,7 @@ What is Python?	Paris is a city in France	0
 - **Inference**: GPU-accelerated
 - **Expected MRR**: 0.5-0.7+
 
-## 📈 Evaluation Metrics
+##  Evaluation Metrics
 
 ### Mean Reciprocal Rank (MRR)
 Measures how high the first relevant answer is ranked.
@@ -134,7 +134,7 @@ Measures precision at each position where a relevant answer appears.
 MAP = (1/|Q|) * Σ (1/num_relevant) * Σ (precision@k)
 ```
 
-## 🎨 Web Interface
+##  Web Interface
 
 The Streamlit app provides an interactive interface with:
 - Text input for questions
@@ -144,7 +144,7 @@ The Streamlit app provides an interactive interface with:
 
 ![Sample Screenshot](screenshot.png)
 
-## 🔧 Configuration
+##  Configuration
 
 Key hyperparameters (adjustable in source code):
 
@@ -160,7 +160,7 @@ sample_size = 300           # Number of examples for BERT training
 random_state = 42           # For reproducibility
 ```
 
-## 💡 Usage Examples
+##  Usage Examples
 
 ### Command Line Usage
 ```python
@@ -190,7 +190,7 @@ for sentence, score in results[:5]:
 3. Click "Get Answers"
 4. View results from both models
 
-## 🚀 Deployment
+## Deployment
 
 ### Streamlit Cloud
 1. Push to GitHub
@@ -213,7 +213,7 @@ docker build -t wikiqa .
 docker run -p 8501:8501 wikiqa
 ```
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 | Issue | Solution |
 |-------|----------|
@@ -223,7 +223,7 @@ docker run -p 8501:8501 wikiqa
 | BERT download fails | Check internet connection |
 | Port 8501 already in use | Use `streamlit run app.py --server.port 8502` |
 
-## 📚 Performance Benchmarks
+##  Performance Benchmarks
 
 On a machine with 16GB RAM and an NVIDIA GPU:
 
@@ -232,7 +232,7 @@ On a machine with 16GB RAM and an NVIDIA GPU:
 | TF-IDF | <1 second | <10ms | 0.42 | 0.31 |
 | BERT | ~2 minutes | ~50ms | 0.65 | 0.54 |
 
-## 🔗 Resources
+##  Resources
 
 - [Streamlit Documentation](https://docs.streamlit.io)
 - [Hugging Face Transformers](https://huggingface.co/docs/transformers)
@@ -267,17 +267,6 @@ If you use this project in your research, please cite:
 }
 ```
 
-## 📧 Contact & Support
-
-- **Issues**: Report bugs on the GitHub Issues page
-- **Discussions**: Ask questions on the Discussions tab
-- **Email**: your-email@example.com
-
-## 🙏 Acknowledgments
-
-- Hugging Face for the transformers library
-- Streamlit for the amazing web framework
-- The WikiQA dataset creators
 
 ---
 
